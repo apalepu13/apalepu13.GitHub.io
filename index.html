@@ -1,0 +1,179 @@
+---
+layout: main
+---
+<body>
+  <div class="container">
+
+      <div class="col-xs-12 col-sm-9 col-md-9">
+
+        <div class="row">
+        <p>
+    	  I am a third year PhD student at <a href="https://hst.mit.edu">Harvard-MIT Health Sciences & Technology</a> under <a href='https://www.hsph.harvard.edu/andrew-beam/'>Andrew Beam</a> and am a member of the <a href='http://beamlab.org'>Beam </a> lab at the <a href='https://www.hsph.harvard.edu'> Harvard T.H Chan School of Public Health </a>.
+  		</p><p>
+        Generally, I am interested exploring self-supervised learning and deep learning applications in the medical domain. In my current work, I aim to characterize and improve the <a href=''>CLIP</a>, architecture. In particular, I have been exploring cross-attention-based regularization, robustness to shortcut learning, and zero-shot classification techniques for CLIP-style models.
+      </p><p>
+        Previously, I received M.S.E and B.S degrees in Biomedical Engineering from <a href="https://www.jhu.edu">Johns Hopkins University</a>. During that time, I collaborated with Johns Hopkins faculty, clinicians, and hospital administrators on a diverse set of biomedical and ML projects, including: CNN-based tracking of surgical instruments, <a href="https://www.nature.com/articles/s41598-021-99397-4">early prognosis of traumatic brain injury in the ICU</a>, <a href="https://ieeexplore.ieee.org/abstract/document/8512244">automating EEG analysis for focal-onset epilepsy</a>, and <a href="https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/15/2/021005/1090562/Establishing-a-Quantitative-Endpoint-for">predicting a quantitative endpoint for transarterial embolization</a>.
+        </p></div>
+
+        <div class="row">
+          <h2><a name="news"></a>News</h2>
+          <hr>
+          <p> 
+            <ul class="nav nav-pills nav-stacked">
+            <li> 30 September 22 -- Started the personal website.</li>
+            </p>
+        </div>
+
+        <div class="row">
+          <h2><a name="publications"></a>Publications</h2>
+          <hr>
+          <h3>Preprints</h3>
+          <p>
+          Some of my work is available as
+          <a href="https://arxiv.org/a/palepu_a_1.html">preprints on arXiv</a>.
+          </p>
+          <h3>2022</h3>
+          <p>
+            <strong> Counterfactually Guided Policy Transfer in Clinical Settings</strong>
+            <br>
+            Domain shift creates significant challenges for sequential decision making in healthcare since the target domain may be both data-scarce and confounded. In this paper, we propose a method for off-policy transfer by modeling the underlying generative process with a causal mechanism. We use informative priors from the source domain to augment counterfactual trajectories in the target in a principled manner. Policy learning in the target domain is further regularized via the source policy through KL-divergence. 
+            <br>
+            <strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi
+            <br>
+            <em>Conference on Health, Inference and Learning (CHIL)</em>, 2022
+            <div class="btn-group-xs">
+              <a href="/papers/KillianGhassemiJoshi_2022CHIL.pdf" class="btn btn-default">Paper</a>
+              <a href="/papers/KillianGhassemiJoshi_2022CHIL_poster.pdf" class="btn btn-default">Poster</a>
+            </div>
+          </p>
+          <h3>2021</h3>
+          <p>
+            <strong> Medical Dead-ends and Learning to Identify High-Risk States and Treatments</strong>
+            <br>
+            In data-constrained offline settings optimal sequential decision policies may not be attainable. However, negative outcomes in data can be used to identify behaviors to avoid, thereby guarding against overoptimistic decisions in safety-critical domains that may be significantly biased due to reduced data availability. Along these lines we introduce an approach that identifies possible "dead-ends" of a state space as well as high-risk treatments that likely lead to them. We frame the discovery of these dead-ends as an RL problem, training three independent deep neural models for automated state construction, dead-end discovery and confirmation.
+            <br>
+            Mehdi Fatemi, <strong>Taylor W. Killian</strong>, Jayakumar Subramanian, Marzyeh Ghassemi
+            <br>
+            <em>Neural Information Processing Systems</em>, 2021
+            <div class="btn-group-xs">
+              <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS.pdf"
+              class="btn btn-default">Paper</a>
+              <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS_poster.pdf" class="btn btn-default">Poster</a>
+              <a href="https://github.com/microsoft/med-deadend"
+              class="btn btn-default">Code</a>
+            </div>
+          </p>
+          <h3>2020</h3>
+          <p>
+            <strong>An Empirical Study of Representation Learning for Reinforcement Learning in Healthcare</strong>
+            <br>
+            We investigate several information encoding approaches to develop state representations of patient health from sequential data. We evaluate these representations utility for predicting the next physiological patient observation as well as the development of treatment policies.
+            <br>
+            <strong>Taylor W. Killian</strong>, Haoran Zhang, Jayakumar Subramanian, Mehdi Fatemi, Maryzeh Ghassemi
+            <br>
+            <a href="https://ml4health.github.io/2020/"><em>ML4H: Machine Learning for Health Workshop at NeurIPS</em></a>
+            <div class='btn-group-xs'>
+              <a href="papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H.pdf" class='btn btn-default'>Paper</a>
+              <a href="papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H_poster.pdf" class='btn btn-default'>Poster</a>
+              <a href="https://github.com/MLforHealth/rl_representations/" class='btn btn-default'>Code</a>
+            </div>
+          </p>
+          <p>
+          	<strong>Multiple Sclerosis Severity Classification From Clinical Text</strong>
+          	<br>
+          	We present the first publicly available transformer model trained on real clinical data other than MIMIC, specifically finetuned for the support of Multiple Sclerosis prediciton and treatment based on clincal consult notes. The model can be found <a href="https://huggingface.co/NLP4H/ms_bert">here</a>
+          	<br>
+          	Alister D'Costa, Stefan Denkovski, Michal Malyska, Sae Young Moon, Brandon Rufino, Zhen Yang, <strong>Taylor W. Killian</strong>, Marzyeh Ghassemi
+          	<br>
+          	<a href="https://clinical-nlp.github.io/2020/"><em>The 3rd Clinical Natural Language Processing Workshop</em></a>
+          	<div class='btn-group-xs'>
+          		<a href='/papers/MSBERT_dCostaDenkovskiMalyskaMoonRufinoYangKillianGhassemiClinicalNLP_2020.pdf' class='btn btn-default'>Paper</a>
+          	</div>
+          </p>
+
+          <p>
+          	<strong>Counterfactual Transfer via Inductive Bias in Clinical Settings</strong>
+          	<br>
+          	By using counterfactual inference, we establish an approach to transfer learning within offline, off-policy Reinforcement Learning that provides improved policy performance in data-scarce target environments.
+          	<br>
+          	<strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi
+          	<br>
+          	<a href="https://biases-invariances-generalization.github.io/"><em>Inductive Biases, Invariances and Generalization in RL (BIG) ICML Workshop</em></a>
+          	<div class='btn-group-xs'>
+          		<a href="https://biases-invariances-generalization.github.io/pdf/big_40.pdf" class='btn btn-default'>Paper</a>
+      		</div>
+      	  </p>
+
+          <p>
+            <strong>Optimization Methods for Interpretable Differentiable Decision Trees Applied to Reinforcement Learning</strong>
+            <br>
+            We leverage a differentiable form of a decision tree for Reinforcement Learning which allows for online updates via SGD. From this decision tree, an interpretable policy is extracted. We analyze the optimization behavior of such classes of policies and demonstrate equitable or better performance over batch trained decision trees and similarly sized neural networks.
+            <br>
+            Andrew Silva, <strong>Taylor W. Killian</strong>, Ivan Rodriguez Jimenez, Sung-Hyun Son, Matthew Gombolay <br>
+            <a href='https:aistats.org'>The 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)</a>
+            <div class='btn-group-xs'>
+            	<a href='/papers/SilvaKillianJimenezSonGombolayAISTATS_2020.pdf' class='btn btn-default'>Paper</a>
+            </div>
+          </p>
+          <h3>2019</h3>
+          	<p>
+      			<strong> Kernelized Capsule Networks</strong>
+      			<br>
+      			A hybrid Gaussian Process-Deep Neural Network approach, Kernelized Capsule Networks construct a GP kernel function from the feature representations of a Capsule Network. This combination provides a model robust to adversarial perturbations while also providing a mechanism to detect perturbed inputs.
+      			<br>
+      			<strong>Taylor W. Killian</strong>, Justin Goodwin, Olivia Brown, Sung-Hyun Son <br>
+      			<a href='https://sites.google.com/view/icml2019-generalization/home'><em>1st Workshop on Understanding and Improving Generalization in Deep Learning</em></a>
+      			<div class='btn-group-xs'>
+      				<a href='/papers/KillianGoodwinBrownSon2019_ICML.pdf' class='btn btn-default'>Paper</a>
+      				<a href='/papers/KillianGoodwinBrownSon2019_ICML_poster.pdf' class='btn btn-default'>Poster</a>
+      			</div>
+      		</p>
+          <h3>2018</h3>
+	        <p>
+	          <strong>Automating interictal spike detection: Revisiting a simple threshold rule</strong>
+	          <br>
+	          Demonstrates that a threshold, when coupled with basic signal processing, is a sufficiently sensitive and specific detector of inter-ictal spikes in intracranial EEG data.
+	          <br>
+	          <strong>Anil Palepu</strong>, S. Premanathan, Feraz Azhar, Martina Vendrame, Tobias Loddenkemper, Claus Reinsberger, Gabriel Kreiman, Kimberly A Parkerson, S Sarma, William S Anderson<br>
+	          <a href="https://embc.embs.org/2018/"><em>iEEE Engineering in Medicine & Biology (EMBC) 2018</em></a>
+	          <div class="btn-group-xs">
+	          	<a href="/papers/palepu2018.pdf" class="btn btn-default">Paper</a>
+	          	<a href="/papers/YaoKillianKonidarisFDV2018_ICML_poster.pdf" class="btn btn-default">Poster</a>
+	          	<a href="/papers/YaoKillianKonidarisFDV2018_ICML_oral.pdf" class="btn btn-default">Slides</a>
+	          </div>
+          	</p>
+
+
+        <hr>
+      <<!--
+        <div class="row">
+          <h2><a href="blog">Blog</a></h2>
+        </div>
+      -->
+
+      </div>
+
+    <hr>
+
+    <footer>
+    &nbsp;
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
