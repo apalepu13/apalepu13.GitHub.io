@@ -10,7 +10,7 @@ layout: main
         <p>
     	  I am a third year PhD student at <a href="https://hst.mit.edu">Harvard-MIT Health Sciences & Technology</a> under <a href='https://www.hsph.harvard.edu/andrew-beam/'>Andrew Beam</a> and am a member of the <a href='http://beamlab.org'>Beam </a> lab at the <a href='https://www.hsph.harvard.edu'> Harvard T.H Chan School of Public Health </a>.
   		</p><p>
-        Generally, I am interested exploring self-supervised learning and deep learning applications in the medical domain. In my current work, I aim to characterize and improve the <a href=''>CLIP</a>, architecture. In particular, I have been exploring cross-attention-based regularization, robustness to shortcut learning, and zero-shot classification techniques for CLIP-style models.
+        Generally, I am interested in self-supervised learning, vision models, and language models, especially as these relate to the medical domain. In my current work, I aim to characterize and improve contrastive text-image models like the <a href='https://openai.com/blog/clip/'>CLIP</a>, architecture. In particular, I have been exploring regularization, robustness to shortcut learning, and zero-shot classification techniques for CLIP-style models.
       </p><p>
         Previously, I received M.S.E and B.S degrees in Biomedical Engineering from <a href="https://www.jhu.edu">Johns Hopkins University</a>. During that time, I collaborated with Johns Hopkins faculty, clinicians, and hospital administrators on a diverse set of biomedical and ML projects, including: CNN-based tracking of surgical instruments, <a href="https://www.nature.com/articles/s41598-021-99397-4">early prognosis of traumatic brain injury in the ICU</a>, <a href="https://ieeexplore.ieee.org/abstract/document/8512244">automating EEG analysis for focal-onset epilepsy</a>, and <a href="https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/15/2/021005/1090562/Establishing-a-Quantitative-Endpoint-for">predicting a quantitative endpoint for transarterial embolization</a>.
         </p></div>
@@ -34,112 +34,78 @@ layout: main
           </p>
           <h3>2022</h3>
           <p>
-            <strong> Counterfactually Guided Policy Transfer in Clinical Settings</strong>
+            <strong> Self-Supervision on Images and Text Reduces Reliance on Visual Shortcut Features</strong>
             <br>
-            Domain shift creates significant challenges for sequential decision making in healthcare since the target domain may be both data-scarce and confounded. In this paper, we propose a method for off-policy transfer by modeling the underlying generative process with a causal mechanism. We use informative priors from the source domain to augment counterfactual trajectories in the target in a principled manner. Policy learning in the target domain is further regularized via the source policy through KL-divergence. 
+            On chest x-ray datasets, we demonstrate through synthetically-generated watermark shortcuts that supervised CNNs are heavily reliant and unable to unlearn these shortcuts, and self-supervision with text helps to reduce this reliance.
+              <br>
+            <strong>Anil Palepu</strong>, Andrew Beam
             <br>
-            <strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi
-            <br>
-            <em>Conference on Health, Inference and Learning (CHIL)</em>, 2022
+            <a href="https://sites.google.com/view/scis-workshop/home"><em>2nd Workshop on Spurious Correlations, Invariance, and Stability (SCIS)</em></a> at <a href="https://icml.cc"><em>ICML 2022</em></a>
             <div class="btn-group-xs">
-              <a href="/papers/KillianGhassemiJoshi_2022CHIL.pdf" class="btn btn-default">Paper</a>
-              <a href="/papers/KillianGhassemiJoshi_2022CHIL_poster.pdf" class="btn btn-default">Poster</a>
-            </div>
-          </p>
-          <h3>2021</h3>
-          <p>
-            <strong> Medical Dead-ends and Learning to Identify High-Risk States and Treatments</strong>
-            <br>
-            In data-constrained offline settings optimal sequential decision policies may not be attainable. However, negative outcomes in data can be used to identify behaviors to avoid, thereby guarding against overoptimistic decisions in safety-critical domains that may be significantly biased due to reduced data availability. Along these lines we introduce an approach that identifies possible "dead-ends" of a state space as well as high-risk treatments that likely lead to them. We frame the discovery of these dead-ends as an RL problem, training three independent deep neural models for automated state construction, dead-end discovery and confirmation.
-            <br>
-            Mehdi Fatemi, <strong>Taylor W. Killian</strong>, Jayakumar Subramanian, Marzyeh Ghassemi
-            <br>
-            <em>Neural Information Processing Systems</em>, 2021
-            <div class="btn-group-xs">
-              <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS.pdf"
+              <a href="/papers/SCIS_Paper.pdf"
               class="btn btn-default">Paper</a>
-              <a href="/papers/FatemiKillianSubramanianGhassemi_2021NeurIPS_poster.pdf" class="btn btn-default">Poster</a>
-              <a href="https://github.com/microsoft/med-deadend"
+              <a href="/papers/SCIS_Spotlight_Final.pdf" class="btn btn-default">Presentation</a>
+              <a href="/papers/SCIS_Poster.pdf" class="btn btn-default">Poster</a>
+              <a href="https://github.com/apalepu13/CNN_CLIP_Shortcut_Feature_Reliance"
               class="btn btn-default">Code</a>
             </div>
-          </p>
-          <h3>2020</h3>
-          <p>
-            <strong>An Empirical Study of Representation Learning for Reinforcement Learning in Healthcare</strong>
-            <br>
-            We investigate several information encoding approaches to develop state representations of patient health from sequential data. We evaluate these representations utility for predicting the next physiological patient observation as well as the development of treatment policies.
-            <br>
-            <strong>Taylor W. Killian</strong>, Haoran Zhang, Jayakumar Subramanian, Mehdi Fatemi, Maryzeh Ghassemi
-            <br>
-            <a href="https://ml4health.github.io/2020/"><em>ML4H: Machine Learning for Health Workshop at NeurIPS</em></a>
-            <div class='btn-group-xs'>
-              <a href="papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H.pdf" class='btn btn-default'>Paper</a>
-              <a href="papers/KillianZhangSubramanianFatemiGhassemi_2020ML4H_poster.pdf" class='btn btn-default'>Poster</a>
-              <a href="https://github.com/MLforHealth/rl_representations/" class='btn btn-default'>Code</a>
-            </div>
-          </p>
-          <p>
-          	<strong>Multiple Sclerosis Severity Classification From Clinical Text</strong>
+          </p>          <p>
+          	<strong>Artificial Intelligence Based on Machine Learning in Pharmacovigilance: A Scoping Review</strong>
           	<br>
-          	We present the first publicly available transformer model trained on real clinical data other than MIMIC, specifically finetuned for the support of Multiple Sclerosis prediciton and treatment based on clincal consult notes. The model can be found <a href="https://huggingface.co/NLP4H/ms_bert">here</a>
+          	We present a scoping review to characterize the use of machine learning in pharmacovigilance and suggest opportunities for improvements.
           	<br>
-          	Alister D'Costa, Stefan Denkovski, Michal Malyska, Sae Young Moon, Brandon Rufino, Zhen Yang, <strong>Taylor W. Killian</strong>, Marzyeh Ghassemi
-          	<br>
-          	<a href="https://clinical-nlp.github.io/2020/"><em>The 3rd Clinical Natural Language Processing Workshop</em></a>
+          	Benjamin Kompa, Joe B Hakim, <strong> Anil Palepu</strong>, Kathryn Grace Kompa, Michael Smith, Paul A Bain, Stephen Woloszynek, Jeffery L Painter, Andrew Bate, Andrew L Beam<br>
+          	<a href="https://www.springer.com/journal/40264"><em>Drug Safety (Vol 45 Issue 5 p. 477-491), The Official Journal of the International Society of Pharmacovigilance </em></a>
           	<div class='btn-group-xs'>
-          		<a href='/papers/MSBERT_dCostaDenkovskiMalyskaMoonRufinoYangKillianGhassemiClinicalNLP_2020.pdf' class='btn btn-default'>Paper</a>
+          		<a href='/papers/kompa2022.pdf' class='btn btn-default'>Paper</a>
           	</div>
           </p>
 
+          <h3>2021</h3>
           <p>
-          	<strong>Counterfactual Transfer via Inductive Bias in Clinical Settings</strong>
+          	<strong>Digital signatures for early traumatic brain injury outcome prediction in the intensive care unit</strong>
           	<br>
-          	By using counterfactual inference, we establish an approach to transfer learning within offline, off-policy Reinforcement Learning that provides improved policy performance in data-scarce target environments.
+              We leveraged first-day physiology and lab data to develop a model to accurately predict mortality and end-of-stay neurological outcomes for traumatic brain injury patients in the Intensive Care Unit.
+              <br>
+          	<strong>Anil Palepu</strong>, Aditya Murali, Jenna L Ballard, Robert Li, Samiksha Ramesh, Hieu Nguyen, Hanbiehn Kim, Sridevi Sarma, Jose I Suarez, Robert D Stevens
           	<br>
-          	<strong>Taylor W. Killian</strong>, Marzyeh Ghassemi, Shalmali Joshi
-          	<br>
-          	<a href="https://biases-invariances-generalization.github.io/"><em>Inductive Biases, Invariances and Generalization in RL (BIG) ICML Workshop</em></a>
+          	<a href="https://www.nature.com/srep/"><em>Scientific Reports, Vol 11 Issue 1 p. 1-9</em></a>
           	<div class='btn-group-xs'>
-          		<a href="https://biases-invariances-generalization.github.io/pdf/big_40.pdf" class='btn btn-default'>Paper</a>
+          		<a href="/papers/palepu2021.pdf" class='btn btn-default'>Paper</a>
       		</div>
       	  </p>
 
           <p>
-            <strong>Optimization Methods for Interpretable Differentiable Decision Trees Applied to Reinforcement Learning</strong>
-            <br>
-            We leverage a differentiable form of a decision tree for Reinforcement Learning which allows for online updates via SGD. From this decision tree, an interpretable policy is extracted. We analyze the optimization behavior of such classes of policies and demonstrate equitable or better performance over batch trained decision trees and similarly sized neural networks.
-            <br>
-            Andrew Silva, <strong>Taylor W. Killian</strong>, Ivan Rodriguez Jimenez, Sung-Hyun Son, Matthew Gombolay <br>
-            <a href='https:aistats.org'>The 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)</a>
+            <strong>Establishing a Quantitative Endpoint for Transarterial Embolization From Real-Time Pressure Measurements<br>
+            We describe the design of a novel pressure-sensing multilumen catheter and present in-vitro experiments demonstrating that 1) occluded vessel pressure served as a targetable embolization endpoint and 2) off-target embolization could be characterized as a function of injection and vessel pressure<br>
+            Prateek C. Gowda,  Victoria X. Chen,  Miguel C. Sobral,  Taylor L. Bobrow,  Tatiana Gelaf Romer,  <strong>Anil K. Palepu</strong>, Joanna Y. Guo,  Dohyung J. Kim,  Andrew S. Tsai,  Steven Chen,  Clifford R. Weiss,  Nicholas J. Durr
+                <a href='https://asmedigitalcollection.asme.org/medicaldevices/issue/15/2'>The American Society of Mechanical Engineers (ASME) Journal of Medical Devices, Vol 15 Issue 2</a>
             <div class='btn-group-xs'>
-            	<a href='/papers/SilvaKillianJimenezSonGombolayAISTATS_2020.pdf' class='btn btn-default'>Paper</a>
+            	<a href='/papers/gowda2021.pdf' class='btn btn-default'>Paper</a>
             </div>
           </p>
           <h3>2019</h3>
           	<p>
-      			<strong> Kernelized Capsule Networks</strong>
+      			<strong> Evaluating Invasive EEG Implantations with Structural Imaging Data and Functional Scalp EEG Recordings from Epilepsy Patients</strong>
       			<br>
-      			A hybrid Gaussian Process-Deep Neural Network approach, Kernelized Capsule Networks construct a GP kernel function from the feature representations of a Capsule Network. This combination provides a model robust to adversarial perturbations while also providing a mechanism to detect perturbed inputs.
-      			<br>
-      			<strong>Taylor W. Killian</strong>, Justin Goodwin, Olivia Brown, Sung-Hyun Son <br>
-      			<a href='https://sites.google.com/view/icml2019-generalization/home'><em>1st Workshop on Understanding and Improving Generalization in Deep Learning</em></a>
+      			Demonstrated that concordance between non-invasive scalp EEG and invasive electrode placement was correlated to surgical success for focal-onset epilepsy, suggesting potential for non-invasive epilepsy localization
+                <br>
+      			<strong>Anil Palepu</strong>, Adam Li, Zachary Fitzgerald, Katherine Hu, Julia Costacurta, Juan Bulacio, Jorge Martinez-Gonzalez, Sridevi V Sarma <br>
+      			<a href='https://embc.embs.org/2019/'><em>41st iEEE Engineering in Medicine & Biology Conference (EMBC) 2019</em></a>
       			<div class='btn-group-xs'>
-      				<a href='/papers/KillianGoodwinBrownSon2019_ICML.pdf' class='btn btn-default'>Paper</a>
-      				<a href='/papers/KillianGoodwinBrownSon2019_ICML_poster.pdf' class='btn btn-default'>Poster</a>
+      				<a href="/papers/palepu2019.pdf" class="btn btn-default">Paper</a>
       			</div>
       		</p>
           <h3>2018</h3>
 	        <p>
 	          <strong>Automating interictal spike detection: Revisiting a simple threshold rule</strong>
 	          <br>
-	          Demonstrates that a threshold, when coupled with basic signal processing, is a sufficiently sensitive and specific detector of inter-ictal spikes in intracranial EEG data.
+	          Demonstrated that a threshold, when coupled with basic signal processing, was a sufficiently sensitive and specific detector of inter-ictal spikes in intracranial EEG data.
 	          <br>
 	          <strong>Anil Palepu</strong>, S. Premanathan, Feraz Azhar, Martina Vendrame, Tobias Loddenkemper, Claus Reinsberger, Gabriel Kreiman, Kimberly A Parkerson, S Sarma, William S Anderson<br>
-	          <a href="https://embc.embs.org/2018/"><em>iEEE Engineering in Medicine & Biology (EMBC) 2018</em></a>
+	          <a href="https://embc.embs.org/2018/"><em>40th iEEE Engineering in Medicine & Biology Conference (EMBC) 2018</em></a>
 	          <div class="btn-group-xs">
 	          	<a href="/papers/palepu2018.pdf" class="btn btn-default">Paper</a>
-	          	<a href="/papers/YaoKillianKonidarisFDV2018_ICML_poster.pdf" class="btn btn-default">Poster</a>
-	          	<a href="/papers/YaoKillianKonidarisFDV2018_ICML_oral.pdf" class="btn btn-default">Slides</a>
 	          </div>
           	</p>
 
