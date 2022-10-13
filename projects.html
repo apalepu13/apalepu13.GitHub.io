@@ -1,0 +1,53 @@
+---
+layout: main
+---
+<body>
+  <div class="container">
+
+      <div class="col-xs-12 col-sm-9 col-md-9">
+
+        <div class="row"><p>
+            <strong> Self-supervised learning for chest x-rays and reports</strong>
+            <br> Rationale: <br>
+            Medical data, such as chest x-rays, are rich with information. However, they are not always labeled, and even when they are, these labels may only capture a fraction of the information a radiologist considers when evaluating the image.
+            <br> While labels are not always present or ideal, radiology reports that discuss clinically relevant information often accompany medical imaging.
+            <br> Self-supervised image-text architectures are an opportunity to leverage these radiology reports to learn from rich medical imaging and paired text data.
+            <br> We believe this type of architecture not only can yield better image representation, but also can allow us to accurately classify unseen diseases based on textual descriptions, detect dataset shift and for which inputs our model can be reliably used, and reduce reliance on spurious correlations that tradional CNNs are subject to.
+
+            <br> Project: <br>
+            We trained a modified version of CLIP on MIMIC-CXR data. We use CheXpert and Padchest datasets for evaluations. We generate synthetic watermark shortcuts to evaluate shortcut learning.
+
+            <br> Outcomes: <br>
+                <ul class="nav nav-pills nav-stacked">
+                <li> We demonstrate through synthetically-generated watermark shortcuts on chest x-rays that supervised CNNs are heavily reliant and unable to unlearn shortcuts, and self-supervision with text helps to reduce this reliance.</li>
+                <li> We developed a regularized version of the model that achieves zero-shot classification AUCs better than a comparable fully-supervised CNN on external test data.</li>
+                <li> Using zero-shot prompting, we are able to classify novel diseases not present in training data, such as covid19. Our performance is competitive, and in some cases, exceeds that of radiologists.</li>
+                </ul>
+
+
+        </div>
+
+    <hr>
+
+    <footer>
+    &nbsp;
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
