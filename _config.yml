@@ -20,7 +20,7 @@ email: apalepu@mit.edu # add your Email address
 discus-identifier: # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: G-CS462P7CR8
 
 # Build Settings
 markdown: kramdown
