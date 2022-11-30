@@ -13,18 +13,18 @@ layout: main
                 <li> Medical imaging, such as chest x-rays, are rich with information. However, they are not always labeled, and even when they are, these labels may only capture a fraction of the information a radiologist considers when evaluating the image. </li>
                 <li> While labels are not always present or ideal, radiology reports that discuss clinically relevant information often accompany medical imaging. </li>
                 <li> Self-supervised image-text architectures are an opportunity to leverage these radiology reports to learn from rich medical imaging and paired text data. </li>
-                <li> We believe this type of architecture not only can yield better image representation, but also can allow us to: <ul> <li> accurately classify unseen diseases based on textual descriptions </li> <li>detect dataset shift and for which inputs our model can be reliably used </li>  <li>reduce reliance on spurious correlations that tradional CNNs are subject to. </li></ul></li>
+                <li> We believe this type of architecture not only can yield better image representation, but also can allow us to: <ul> <li> accurately classify unseen diseases based on text descriptions </li> <li>identify for which inputs our model can be reliably used </li>  <li>reduce reliance on spurious correlations that tradional CNNs are subject to. </li></ul></li>
             </ul></li>
             <li> Project:<ul>
                 <li> We trained a modified version of CLIP on MIMIC-CXR data and used CheXpert and Padchest datasets for evaluation. </li>
                 <li> We generated synthetic watermark shortcuts to evaluate shortcut learning. </li>
-                <li> We introduced new terms to the loss to impose sparsity of cross attention between patch and word embeddings.</li>
+                <li> We introduced new terms to the loss to impose sparsity of image-patch and text-token embeddings.</li>
             </ul>
             </li>
             <li>Outcomes:
                 <ul class="nav nav-pills nav-stacked">
                 <li> We demonstrated through synthetically-generated watermark shortcuts on chest x-rays that supervised CNNs are heavily reliant and unable to unlearn shortcuts, and self-supervision with text helps to reduce this reliance.</li>
-                <li> We developed a regularized version of the model that achieves zero-shot classification AUCs better than a comparable fully-supervised CNN on external test data.</li>
+                <li> We developed a regularized version of the model that achieves SOTA zero-shot classification AUCs, better than a comparable fully-supervised CNN on external test data.</li>
                 <li> Using descriptive text prompting, we were able to classify novel diseases not present in training data, such as covid19. Our performance is competitive, and in some cases, exceeds that of radiologists.</li>
                 </ul>
             </li>
