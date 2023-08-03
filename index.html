@@ -9,7 +9,7 @@ layout: main
 
         <div class="row">
         <p>
-    	  I am a third year PhD student at <a href="https://hst.mit.edu">Harvard-MIT Health Sciences & Technology</a> under <a href='https://www.hsph.harvard.edu/andrew-beam/'>Andrew Beam</a> and am a member of the <a href='http://beamlab.org'>Beam Lab</a> at the <a href='https://www.hsph.harvard.edu'> Harvard T.H. Chan School of Public Health </a>.
+    	  I am a fourth year PhD student at <a href="https://hst.mit.edu">Harvard-MIT Health Sciences & Technology</a> under <a href='https://www.hsph.harvard.edu/andrew-beam/'>Andrew Beam</a> and am a member of the <a href='http://beamlab.org'>Beam Lab</a> at the <a href='https://www.hsph.harvard.edu'> Harvard T.H. Chan School of Public Health </a>.
   		</p><p>
         Generally, I am interested in self-supervised learning, vision models, and language models, especially as these relate to the medical domain. In my current work, I aim to characterize and improve contrastive text-image models like the <a href='https://openai.com/blog/clip/'>CLIP</a> architecture. In particular, I have been exploring regularization, <a href="/papers/SCIS_Paper.pdf">robustness to spurious correlations</a>, and zero-shot classification techniques for these models.
       </p><p>
@@ -20,7 +20,7 @@ layout: main
           <hr>
           <p> 
             <ul class="nav nav-pills nav-stacked">
-            <li> 10 July 2023 -- Moved to NYC for student researcher position w/ Google's MedPaLM team.</li>
+            <li> 10 July 2023 -- Moved to NYC for student researcher position w/ Google's Medical Assistant (MedPaLM) moonshot team.</li>
             <li> 30 May 2023 -- Began clinical rotations at Boston VA Medical centers.</li>
             <li> 28 March 2023 -- Passed HST Oral Qualifying Exam.</li>
             <li> 30 September 2022 -- Started the personal website.</li>
@@ -36,14 +36,26 @@ layout: main
           Some of my work is available as
           <a href="https://arxiv.org/a/palepu_a_1.html">preprints on arXiv</a>.
           </p>
-            <h3>2023</h3><p>
-            <strong> TIER: Text-Image Entropy Regularization for medical CLIP-style models</strong>
+            <h3>2023</h3> <p>
+            <strong> Conformal Prediction with Large Language Models for Multi-Choice Question Answering</strong>
+            <br>
+            In this paper, we explore conformal prediction for LLMs in multiple choice question answering, finding a strong correlation between uncertainty estimates and prediction accuracy. We demonstrate that our conformal framework produces valid prediction sets when the calibration and evaluation data come from the same distribution.
+              <br>
+            <strong>Anil Palepu</strong>, Andrew Beam
+            <br>
+            <a href="https://sites.google.com/view/teach-icml-23/home"><em>TEACH Conversational AI Workshop</em></a> at <a href="https://icml.cc"><em>ICML 2023</em></a>
+            <div class="btn-group-xs">
+              <a href="/papers/Conformal_LLM.pdf"
+              class="btn btn-default">Paper</a>
+            </div>
+          </p> <p>
+            <strong> TIER: Text-Image Entropy Regularization for Medical CLIP-style models</strong>
             <br>
             We develop a regularization method for CLIP-style models which computes pairwise image-patch and text-similarity scores and uses entropy to penalize the model if these similarities are uniform. This regularization encourages text tokens to only describe a few of image patches and each image patch to only correspond to only a few text tokens.
               <br>
             <strong>Anil Palepu</strong>,  Andrew Beam
             <br>
-            <a href="https://www.chilconference.org"><em>Conference on Health, Inference and Learning 2023</em></a>
+            <a href="https://www.mlforhc.org"><em>Machine Learning for Health Care (MLHC) 2023</em></a>
             <div class="btn-group-xs">
               <a href="/papers/TIER2023.pdf"
               class="btn btn-default">Paper</a>
